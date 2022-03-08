@@ -25,6 +25,10 @@ spec:
         - use_ci
         - use_cobra_cmd
       properties:
+        full_name:
+          title: Your name as author
+          type: string
+          description: Unique name of the component
         component_id:
           title: Name
           type: string
@@ -132,6 +136,7 @@ spec:
       input:
         url: ./skeleton
         values:
+          full_name: "{{ parameters.full_name }}"
           component_id: "{{ parameters.component_id }}"
           project_short_description: "{{ parameters.project_short_description }}"
           docker_image: "{{ parameters.docker_image }}"
