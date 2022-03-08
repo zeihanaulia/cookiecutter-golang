@@ -1,3 +1,2 @@
-.tox
-.cache
-__pycache__
+bin
+vendor
