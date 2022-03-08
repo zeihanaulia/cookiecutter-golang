@@ -33,6 +33,10 @@ spec:
           title: Your github username
           type: string
           description: Unique name of the component
+        docker_hub_username:
+          title: Your docker hub
+          type: string
+          description: Unique name of the component
         component_id:
           title: Name
           type: string
@@ -142,6 +146,7 @@ spec:
         values:
           full_name: "{{ parameters.full_name }}"
           github_username: "{{ parameters.github_username }}"
+          docker_hub_username: "{{ parameters.docker_hub_username }}"
           component_id: "{{ parameters.component_id }}"
           project_short_description: "{{ parameters.project_short_description }}"
           docker_image: "{{ parameters.docker_image }}"
