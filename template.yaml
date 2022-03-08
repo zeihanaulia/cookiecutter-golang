@@ -50,6 +50,27 @@ spec:
           enum:
             - alpine
           default: alpine
+        go_mod_or_dep:
+          title: Use go mod or dep
+          type: string
+          enum:
+            - "mod"
+            - "dep"
+          default: "mod"
+        use_docker:
+          title: Use docker
+          type: string
+          enum:
+            - "y"
+            - "n"
+          default: "y"
+        use_git:
+          title: Use git
+          type: string
+          enum:
+            - "y"
+            - "n"
+          default: "y"
         use_logrus_logging:
           title: Enable Logrus Logging (https://github.com/sirupsen/logrus)
           type: string
