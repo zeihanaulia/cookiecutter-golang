@@ -29,6 +29,10 @@ spec:
           title: Your name as author
           type: string
           description: Unique name of the component
+        github_username:
+          title: Your github username
+          type: string
+          description: Unique name of the component
         component_id:
           title: Name
           type: string
@@ -137,6 +141,7 @@ spec:
         url: ./skeleton
         values:
           full_name: "{{ parameters.full_name }}"
+          github_username: "{{ parameters.github_username }}"
           component_id: "{{ parameters.component_id }}"
           project_short_description: "{{ parameters.project_short_description }}"
           docker_image: "{{ parameters.docker_image }}"
