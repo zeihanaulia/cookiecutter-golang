@@ -169,6 +169,14 @@ spec:
         allowedHosts: ["github.com"]
         description: "This is {{ parameters.component_id }}"
         repoUrl: "{{ parameters.repoUrl }}"
+        
+    - id: publish
+      name: Publish
+      action: publish:bitbucket
+      input:
+        allowedHosts: ["bitbucket.com"]
+        description: "This is {{ parameters.component_id }}"
+        repoUrl: "{{ parameters.repoUrl }}"
 
     - id: register
       name: Register
